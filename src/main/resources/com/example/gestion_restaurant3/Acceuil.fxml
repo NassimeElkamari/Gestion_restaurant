@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="900.0" prefWidth="900.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestion_restaurant3.controller.ClientController">
+
+    <children>
+        <MenuBar layoutY="1.0" prefHeight="40.0" prefWidth="600.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Gestion Clients">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#Ajouter"   text="Ajouter client" />
+                        <MenuItem mnemonicParsing="false" onAction="#Modifier" text="Modifier client" />
+                        <MenuItem mnemonicParsing="false" onAction="#listedepart" text="Lister clients" />
+                          </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Gestion Commande">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Ajouter commande" />
+                        <MenuItem mnemonicParsing="false" text="Modifier commande" />
+                        <MenuItem mnemonicParsing="false" text="Lister commandes" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                                       </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Gestion Facture">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Ajouter facture" />
+                        <MenuItem mnemonicParsing="false" text="Modifier facture" />
+                        <MenuItem mnemonicParsing="false" text="Lister factures" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Gestion Serveur">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Ajouter serveur" />
+                        <MenuItem mnemonicParsing="false" text="Modifier serveur" />
+                        <MenuItem mnemonicParsing="false" text="Lister serveurs" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Gestion Menu">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Ajouter au menu" />
+                        <MenuItem mnemonicParsing="false" text="Modifier menu" />
+                        <MenuItem mnemonicParsing="false" text="Lister menu" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        </items>
+                </Menu>
+
+
+            </menus>
+        </MenuBar>
+        <ImageView fitHeight="367.0" fitWidth="647.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/R.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
